@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UniShop </title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0f0f0f;
+            color: #d4af37;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(to right, #000000, #1a1a1a);
+            text-align: center;
+            padding: 30px;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #f5d76e;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #000;
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #d4af37;
+        }
+
+        nav a {
+            color: #d4af37;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 40px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            color: #f5d76e;
+        }
+
+        /* PRODUCTS */
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            width: 240px;
+            padding: 18px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #d4af37;
+            box-shadow: 0 0 15px rgba(212,175,55,0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #d4af37;
+        }
+
+        .card h3 {
+            margin: 12px 0 8px;
+            color: #d4af37;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #f5d76e;
+            margin-bottom: 10px;
+        }
+
+        /* BUTTON */
+        button {
+            background-color: #d4af37;
+            color: black;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #f5d76e;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 15px;
+            border-top: 1px solid #d4af37;
+            font-size: 14px;
+        }
+    </style>
+
+    <script>
+        function addToCart(item) {
+            alert(item + " added to cart successfully!");
+        }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <h1>UNISHOP</h1>
+    <p>Premium Toys • Luxury Clutches • Skincare Essentials</p>
+</header>
+
+<nav>
+    <a href="#toys">Toys</a>
+    <a href="#clutches">Clutches</a>
+    <a href="#skincare">Skincare</a>
+</nav>
+
+<!-- TOYS -->
+<section id="toys">
+    <h2>🧸 TOYS COLLECTION</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/23/bf/a7/23bfa774eb503426d3278247aa6aaae3.jpg">
+            <h3>Teddy Bear</h3>
+            <div class="price">₹499</div>
+            <button onclick="addToCart('Teddy Bear')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/rab8v7NmvUY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBRkEyJbT2vt7_f-0SjnSDDRvqSfw">
+            <h3>Kids Racing Car</h3>
+            <div class="price">₹799</div>
+            <button onclick="addToCart('Kids Racing Car')">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- CLUTCHES -->
+<section id="clutches">
+    <h2>👜 CLUTCHES COLLECTION</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://kxadmin.metroshoes.com/blog_image/1763360341Metro%20%20Blog%20DB%202.jpg">
+            <h3>Party Clutch</h3>
+            <div class="price">₹999</div>
+            <button onclick="addToCart('Party Clutch')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://designerbagexchange.com/wp-content/uploads/2023/10/designer-bag-exchange-mini-chanel-front.jpeg">
+            <h3>Luxury Leather Clutch</h3>
+            <div class="price">₹1299</div>
+            <button onclick="addToCart('Luxury Leather Clutch')">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- SKINCARE -->
+<section id="skincare">
+    <h2>💄 SKINCARE COLLECTION</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://www.dotandkey.com/cdn/shop/articles/image_2.png?v=1739257332&width=1100">
+            <h3>Sunscreen</h3>
+            <div class="price">₹699</div>
+            <button onclick="addToCart('Sunscreen')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://theloveco.in/cdn/shop/articles/best-aloe-vera-gel-for-face-hair-and-skin-hydration-the-love-co.jpg?crop=center&height=1200&v=1729317208&width=1200">
+            <h3>Aloe Vera Gel</h3>
+            <div class="price">₹399</div>
+            <button onclick="addToCart('Aloe Vera Gel')">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 UniShop | Premium Black & Gold Theme | Cloud Deployed</p>
+</footer>
+
+</body>
+</html>
